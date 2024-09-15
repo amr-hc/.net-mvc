@@ -1,0 +1,13 @@
+﻿@model InstructorDetailsViewModel
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h3 class="card-title">@Model.Instructor.name</h3>
+            <p class="card-text"><strong>ID:</strong>          @Model.Instructor.id               </p>
+            <p class="card-text"><strong>Salary:</strong>      @Model.Instructor.salary           </p>
+            <p class="card-text"><strong>Department:</strong>  @Model.Instructor.department.name  </p>
+            <p class="card-text"><strong>Course:</strong>      @Model.Instructor.course.name      </p>
+        </div>
+    </div>
+</div>

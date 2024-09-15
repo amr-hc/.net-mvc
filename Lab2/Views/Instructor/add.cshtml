@@ -1,0 +1,56 @@
+﻿@model InstructorDetailsViewModel
+
+<div class="container mt-4">
+    <h2>Edit Instructor Details</h2>
+    <form action="/Instructor/savecreate/" method="post" class="needs-validation" novalidate>
+
+
+        <div class="form-group">
+            <label for="InstructorName">Name</label>
+            <input type="text" class="form-control" id="InstructorName" name="Instructor.name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="InstructorSalary">Salary</label>
+            <input type="number" class="form-control" id="InstructorSalary" name="Instructor.salary" required />
+        </div>
+
+        <div class="form-group">
+            <label for="InstructorAddress">address</label>
+            <input type="text" class="form-control" id="Instructoraddress" name="Instructor.address" required />
+        </div>        
+        
+        <div class="form-group">
+            <label for="Instructorimage">image</label>
+            <input type="text" class="form-control" id="Instructorimage" name="Instructor.image" required />
+        </div>
+
+        <div class="form-group">
+            <label for="InstructorDepartment">Department</label>
+
+            <select name="Instructor.dept_id" id="InstructorDepartment">
+                @foreach (Department deprt in Model.departmentlist)
+                {
+                    <option value="@deprt.id">@deprt.name</option>
+                }
+            </select>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="InstructorCourse">Course</label>
+            <select name="Instructor.crs_id" id="InstructorCourse">
+                @foreach (Course course in Model.courseslist)
+                {
+                    <option value="@course.id">@course.name</option>
+                }
+            </select>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary mt-3">Add</button>
+        <a href="/Instructor/" class="btn btn-secondary mt-3">Cancel</a>
+    </form>
+</div>

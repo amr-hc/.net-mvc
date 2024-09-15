@@ -1,0 +1,36 @@
+﻿@model List<Instructor>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">salary</th>
+            <th scope="col">department</th>
+            <th scope="col">course</th>
+            <th scope="col">details</th>
+            <th scope="col">edit</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Instructor item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.salary</td>
+                <td>@item.department.name</td>
+                <td>@item.course.name</td>
+                <td>
+                    <a href="/Instructor/details/@item.id">show</a>
+                </td>        
+                <td>
+                    <a href="/Instructor/edit/@item.id">edit</a>
+                </td>
+
+            </tr>
+        }
+
+   
+    </tbody>
+</table>
