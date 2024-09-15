@@ -1,0 +1,27 @@
+﻿@model Course
+
+@{
+    SelectList deprtmentsOptions = new SelectList(ViewBag.deprtments, "id", "name");
+}
+<form asp-action="saveadd" method="post">
+
+    <label asp-for="name"></label>
+    <input asp-for="name" />
+
+    <label asp-for="degree"></label>
+    <input asp-for="degree" />
+
+    <label asp-for="minDegree"></label>
+    <input asp-for="minDegree" />
+
+    <select asp-items="deprtmentsOptions" asp-for="dept_id">
+
+    </select>
+    
+    <label asp-for="hours"></label>
+    <input asp-for="hours" />
+
+    <input type="submit" value="Submit">
+
+
+</form>

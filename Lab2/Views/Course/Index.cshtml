@@ -1,0 +1,45 @@
+﻿@model List<Course>
+
+<a asp-action="add" class="btn btn-primary">Add</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">name</th>
+            <th scope="col">degree</th>
+            <th scope="col">hours</th>
+            <th scope="col">details</th>
+            <th scope="col">edit</th>
+            <th scope="col">delete</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Course item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.degree</td>
+                <td>@item.hours</td>
+                <td>
+                    @Html.ActionLink("Go", "details", new { id = item.id })
+                </td>
+                <td>
+                    <a asp-action="edit" asp-controller="Course" asp-route-id="@item.id">Edit</a>
+                </td>
+                <td>
+                <form asp-action="delete" asp-route-id="@item.id" method="post" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+                </td>
+
+
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>

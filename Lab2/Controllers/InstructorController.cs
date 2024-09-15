@@ -1,4 +1,5 @@
-﻿using Lab2.Models;
+﻿using Lab2.Migrations;
+using Lab2.Models;
 using Lab2.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -60,8 +61,33 @@ namespace Lab2.Controllers
         }
 
 
-        public IActionResult savecreate(Instructor instructor)
+        public IActionResult savecreate(Instructor instructor, IFormFile photo)
         {
+
+            string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+
+            // Create a unique file name for the uploaded image
+            var uniqueFileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
+
+            // Get the file path to save the image
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+            // Save the uploaded image to the server
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                photo.CopyTo(fileStream);
+            }
+
+            // Save the file path to the Course object (adjust the property if necessary)
+            instructor.image = "/uploads/" + uniqueFileName;
+
+
+
             db.Instructors.Add(instructor);
             db.SaveChanges();
             return RedirectToAction("index");

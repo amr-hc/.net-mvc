@@ -2,7 +2,7 @@
 
 <div class="container mt-4">
     <h2>Edit Instructor Details</h2>
-    <form action="/Instructor/savecreate/" method="post" class="needs-validation" novalidate>
+    <form action="/Instructor/savecreate/" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
 
 
         <div class="form-group">
@@ -23,6 +23,12 @@
         <div class="form-group">
             <label for="Instructorimage">image</label>
             <input type="text" class="form-control" id="Instructorimage" name="Instructor.image" required />
+        </div>
+
+
+        <div class="form-group">
+            <label for="image">Upload Photo</label>
+            <input type="file" name="photo" class="form-control" />
         </div>
 
         <div class="form-group">
