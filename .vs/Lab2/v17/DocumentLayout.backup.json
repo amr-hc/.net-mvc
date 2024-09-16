@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\models\\uniqenameattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\models\\uniqenameattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\instructor\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\course\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\views\\instructor\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\instructor\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|c:\\users\\amro7\\desktop\\training csharp\\dotnet\\lab2\\lab2\\views\\course\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0CA648BE-D7F3-4DEC-BFDD-0D2EE553224E}|Lab2\\Lab2.csproj|solutionrelative:lab2\\views\\course\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,93 +42,93 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InstructorController.cs",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\InstructorController.cs",
-              "RelativeDocumentMoniker": "Lab2\\Controllers\\InstructorController.cs",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\InstructorController.cs*",
-              "RelativeToolTip": "Lab2\\Controllers\\InstructorController.cs*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAUwFAAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T10:36:10.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Lab2\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Lab2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T10:36:08.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "add.cshtml",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Instructor\\add.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Instructor\\add.cshtml",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Instructor\\add.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Instructor\\add.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowB4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T10:34:53.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Course\\Index.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Course\\Index.cshtml",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Course\\Index.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Course\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T09:50:52.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "Lab2\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\CourseController.cs*",
-              "RelativeToolTip": "Lab2\\Controllers\\CourseController.cs*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T09:00:51.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Course\\edit.cshtml",
+              "RelativeDocumentMoniker": "Lab2\\Views\\Course\\edit.cshtml",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Course\\edit.cshtml",
+              "RelativeToolTip": "Lab2\\Views\\Course\\edit.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwAUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-14T20:24:56.918Z",
+              "WhenOpened": "2024-09-16T11:42:59.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Instructor\\edit.cshtml",
-              "RelativeDocumentMoniker": "Lab2\\Views\\Instructor\\edit.cshtml",
-              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Instructor\\edit.cshtml",
-              "RelativeToolTip": "Lab2\\Views\\Instructor\\edit.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvz0AAAAAAAAAAAAAAA==",
+              "Title": "add.cshtml",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Course\\add.cshtml",
+              "RelativeDocumentMoniker": "Lab2\\Views\\Course\\add.cshtml",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Views\\Course\\add.cshtml",
+              "RelativeToolTip": "Lab2\\Views\\Course\\add.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwAMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-14T19:55:39.127Z",
+              "WhenOpened": "2024-09-15T19:17:14.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Lab2\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Lab2\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAiwHEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:14:45.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Models\\Instructor.cs",
+              "RelativeDocumentMoniker": "Lab2\\Models\\Instructor.cs",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Models\\Instructor.cs",
+              "RelativeToolTip": "Lab2\\Models\\Instructor.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:13:46.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UniqeNameAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Models\\UniqeNameAttribute.cs",
+              "RelativeDocumentMoniker": "Lab2\\Models\\UniqeNameAttribute.cs",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Models\\UniqeNameAttribute.cs*",
+              "RelativeToolTip": "Lab2\\Models\\UniqeNameAttribute.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvw0AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T19:08:31.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Lab2\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Models\\Course.cs",
+              "RelativeToolTip": "Lab2\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T17:22:14.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "Lab2\\Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\amro7\\Desktop\\training Csharp\\dotnet\\Lab2\\Lab2\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "Lab2\\Controllers\\InstructorController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwDAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:48:00.75Z",
               "EditorCaption": ""
             }
           ]

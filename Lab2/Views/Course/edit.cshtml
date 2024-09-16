@@ -3,7 +3,7 @@
 @{
     SelectList deprtmentsOptions = new SelectList(ViewBag.deprtments, "id", "name");
 }
-<form asp-action="saveadd" method="post" class="container mt-4">
+<form asp-action="saveedit" asp-route-id="@Model.id" method="post" class="container mt-4">
 
     <div class="mb-3">
         <label asp-for="name" class="form-label"></label>

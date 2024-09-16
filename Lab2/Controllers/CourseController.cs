@@ -34,7 +34,7 @@ namespace Lab2.Controllers
             if(page <= 0) {
                 page = 1;
             }
-            List<Course> courses = db.Courses.Skip(5*(page-1)).Take(5).ToList();
+            List<Course> courses = db.Courses.Skip(5*(page-1)).Take(50).ToList();
 
             return View("index", courses);
         }
@@ -50,10 +50,20 @@ namespace Lab2.Controllers
         [HttpPost]
         public IActionResult saveadd(Course course)
         {
-            db.Courses.Add(course);
-            db.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                db.Courses.Add(course);
+                db.SaveChanges();
+                return RedirectToAction("index");
+            }
+            else
+            {
+                ViewBag.deprtments = db.Departments.ToList();
+                return View("add", course);
+            }
+            
 
-            return RedirectToAction("index");
+            
         }
 
         
@@ -63,6 +73,49 @@ namespace Lab2.Controllers
             db.Courses.Remove(course);
             db.SaveChanges();
             return RedirectToAction("index");
+        }
+
+
+
+        public IActionResult CheckminlessDegree(int degree, int minDegree)
+        {
+            if(degree > minDegree)
+            {
+                return Json(true);
+            }
+
+            return Json(false);
+        }
+
+
+        public IActionResult edit(int id)
+        {
+            Course course = db.Courses.FirstOrDefault(c => c.id == id);
+            ViewBag.deprtments = db.Departments.ToList();
+
+            return View("edit", course);
+        }
+
+        public IActionResult saveedit(Course editedCourse, int id)
+        {
+            if (ModelState.IsValid)
+            {
+
+                Course existingCourse = db.Courses.FirstOrDefault(c => c.id == id);
+
+                db.Entry(existingCourse).CurrentValues.SetValues(editedCourse);
+
+                db.SaveChanges();
+
+                return RedirectToAction("index");
+            }
+            else
+            {
+                ViewBag.deprtments = db.Departments.ToList();
+                return View("edit", editedCourse);
+
+            }
+
         }
     }
 }
