@@ -11,10 +11,16 @@ namespace Lab2.Models
         public DbSet<CrsResult> CrsResults { get; set; }
         public DbSet<Trainee> Trainees { get; set; }
 
+
+
+
         public Mydb() : base()
         {
 
         }
+
+
+        public Mydb(DbContextOptions Options) : base(Options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

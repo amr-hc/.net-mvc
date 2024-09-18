@@ -1,3 +1,7 @@
+using Lab2.Models;
+using Lab2.Repository;
+using Microsoft.EntityFrameworkCore;
+
 namespace Lab2
 {
     public class Program
@@ -8,6 +12,21 @@ namespace Lab2
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSession();
+
+            builder.Services.AddDbContext<Mydb>(
+                option =>
+                {
+                    option.UseSqlServer(builder.Configuration.GetConnectionString("cs"));
+                }
+
+            );
+
+
+            builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+
+
 
             var app = builder.Build();
 
@@ -17,6 +36,8 @@ namespace Lab2
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 

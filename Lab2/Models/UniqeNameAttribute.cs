@@ -11,7 +11,7 @@ namespace Lab2.Models
         {
             string name = value.ToString();
             int id = ((Course)validationContext.ObjectInstance).id;
-            Course course= mydb.Courses.FirstOrDefault(c => c.name == name && c.id != id);
+            Course course = mydb.Courses.FirstOrDefault(c => c.name == name && c.id != id);
             if (course != null)
             {
                 return new ValidationResult("Not Uniqe");
@@ -20,7 +20,7 @@ namespace Lab2.Models
             else
             {
                 return ValidationResult.Success;
-            }
         }
+    }
     }
 }

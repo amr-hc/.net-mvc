@@ -1,12 +1,12 @@
 ﻿using Lab2.Migrations;
 using Lab2.Models;
+using Lab2.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab2.Controllers
 {
     public class CourseController : Controller
     {
-        public Mydb db = new Mydb();
 
         //[HttpGet]
         //public IActionResult Index(string search)
@@ -26,6 +26,14 @@ namespace Lab2.Controllers
 
         //    return View("index", courses);
         //}
+        ICourseRepository CourseRepo;
+        IDepartmentRepository DepartmentRepo;
+        public CourseController(ICourseRepository CourseRepo, IDepartmentRepository DepartmentRepo)
+        {
+            this.CourseRepo = CourseRepo;
+            this.DepartmentRepo = DepartmentRepo;
+        }
+
 
 
         [HttpGet]
@@ -34,7 +42,9 @@ namespace Lab2.Controllers
             if(page <= 0) {
                 page = 1;
             }
-            List<Course> courses = db.Courses.Skip(5*(page-1)).Take(50).ToList();
+            //List<Course> courses = db.Courses.Skip(5*(page-1)).Take(50).ToList();
+
+            List<Course> courses = CourseRepo.GetAll();
 
             return View("index", courses);
         }
@@ -43,7 +53,8 @@ namespace Lab2.Controllers
         [HttpGet]
         public IActionResult add()
         {
-            ViewBag.deprtments = db.Departments.ToList();
+            //ViewBag.deprtments = db.Departments.ToList();
+            ViewBag.deprtments = DepartmentRepo.GetAll();
             return View("add");
         }
 
@@ -52,13 +63,14 @@ namespace Lab2.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Courses.Add(course);
-                db.SaveChanges();
+                CourseRepo.Add(course);
+                CourseRepo.Save();
                 return RedirectToAction("index");
             }
             else
             {
-                ViewBag.deprtments = db.Departments.ToList();
+                //ViewBag.deprtments = db.Departments.ToList();
+                ViewBag.deprtments = DepartmentRepo.GetAll();
                 return View("add", course);
             }
             
@@ -69,9 +81,13 @@ namespace Lab2.Controllers
         
         public IActionResult delete(int id)
         {
-            Course course = db.Courses.FirstOrDefault(c => c.id == id);
-            db.Courses.Remove(course);
-            db.SaveChanges();
+            //Course course = db.Courses.FirstOrDefault(c => c.id == id);
+            //Course course = db.Courses.FirstOrDefault(c => c.id == id);
+            // db.Courses.Remove(course);
+            //db.SaveChanges();
+
+            CourseRepo.Delete(id);
+            CourseRepo.Save();
             return RedirectToAction("index");
         }
 
@@ -90,8 +106,10 @@ namespace Lab2.Controllers
 
         public IActionResult edit(int id)
         {
-            Course course = db.Courses.FirstOrDefault(c => c.id == id);
-            ViewBag.deprtments = db.Departments.ToList();
+            //Course course = db.Courses.FirstOrDefault(c => c.id == id);
+            Course course = CourseRepo.Getbyid(id);
+            //ViewBag.deprtments = db.Departments.ToList();
+            ViewBag.deprtments = DepartmentRepo.GetAll();
 
             return View("edit", course);
         }
@@ -101,17 +119,20 @@ namespace Lab2.Controllers
             if (ModelState.IsValid)
             {
 
-                Course existingCourse = db.Courses.FirstOrDefault(c => c.id == id);
+                //Course existingCourse = db.Courses.FirstOrDefault(c => c.id == id);
 
-                db.Entry(existingCourse).CurrentValues.SetValues(editedCourse);
+                //db.Entry(existingCourse).CurrentValues.SetValues(editedCourse);
 
-                db.SaveChanges();
+                //db.SaveChanges();
+                editedCourse.id = id;
+                CourseRepo.Update(editedCourse);
+                CourseRepo.Save();
 
                 return RedirectToAction("index");
             }
             else
             {
-                ViewBag.deprtments = db.Departments.ToList();
+                ViewBag.deprtments = DepartmentRepo.GetAll();
                 return View("edit", editedCourse);
 
             }

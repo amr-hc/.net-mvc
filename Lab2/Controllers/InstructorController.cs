@@ -8,9 +8,12 @@ namespace Lab2.Controllers
 {
     public class InstructorController : Controller
     {
-        public Mydb db = new Mydb();
+        public Mydb db;
 
-
+        public InstructorController(Mydb db)
+        {
+            this.db = db;
+        }
         [HttpGet]
         public IActionResult Index()
         {
