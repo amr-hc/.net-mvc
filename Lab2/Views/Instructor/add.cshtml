@@ -34,7 +34,7 @@
         <div class="form-group">
             <label for="InstructorDepartment">Department</label>
 
-            <select name="Instructor.dept_id" id="InstructorDepartment">
+            <select name="Instructor.dept_id" id="InstructorDepartment" onchange="Getemp(this.value)">
                 @foreach (Department deprt in Model.departmentlist)
                 {
                     <option value="@deprt.id">@deprt.name</option>
@@ -60,3 +60,25 @@
         <a href="/Instructor/" class="btn btn-secondary mt-3">Cancel</a>
     </form>
 </div>
+<script>
+
+    function Getemp(id){
+    console.log(id);
+        fetch("/course/GetCoursesbyDepId/" + id)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json(); // Parse the response as JSON
+            })
+            .then(data => {
+                console.log(data); // This will log the actual data received from the API
+                // You can now use `data` to update your UI, such as populating a list or table
+            })
+            .catch(error => {
+                console.error("There was a problem with the fetch operation:", error);
+            });
+
+
+    }
+</script>

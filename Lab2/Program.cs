@@ -1,5 +1,6 @@
 using Lab2.Models;
 using Lab2.Repository;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lab2
@@ -26,7 +27,7 @@ namespace Lab2
             builder.Services.AddScoped<ICourseRepository, CourseRepository>();
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
-
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<Mydb>();
 
             var app = builder.Build();
 

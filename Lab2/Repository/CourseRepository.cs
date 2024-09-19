@@ -26,6 +26,10 @@ namespace Lab2.Repository
         public List<Course> GetAll()
         {
             return db.Courses.ToList();
+        }    
+        public List<Course> GetCoursesByDeprtID(int id)
+        {
+            return db.Courses.Where(c=>c.dept_id==id).ToList();
         }
         public Course Getbyid(int id)
         {

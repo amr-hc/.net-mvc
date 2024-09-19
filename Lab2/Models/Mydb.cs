@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace Lab2.Models
 {
-    public class Mydb:DbContext
+    public class Mydb:IdentityDbContext<ApplicationUser>
     {
 
         public DbSet<Course> Courses { get; set; }

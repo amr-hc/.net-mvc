@@ -96,6 +96,8 @@ namespace Lab2.Controllers
             return RedirectToAction("index");
         }
 
+        
+
 
 
 

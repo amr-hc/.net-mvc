@@ -1,6 +1,7 @@
 ﻿using Lab2.Migrations;
 using Lab2.Models;
 using Lab2.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab2.Controllers
@@ -37,6 +38,7 @@ namespace Lab2.Controllers
 
 
         [HttpGet]
+        [Authorize]
         public IActionResult Index(string search,int page)
         {
             if(page <= 0) {
@@ -137,6 +139,13 @@ namespace Lab2.Controllers
 
             }
 
+        }
+
+
+        [HttpGet]
+        public IActionResult GetCoursesbyDepId(int id) {
+
+            return Json(CourseRepo.GetCoursesByDeprtID(id));
         }
     }
 }

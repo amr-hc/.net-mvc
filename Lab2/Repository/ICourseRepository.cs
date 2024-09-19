@@ -10,6 +10,8 @@ namespace Lab2.Repository
         public void Delete(int id);
 
         public List<Course> GetAll();
+
+        public List<Course> GetCoursesByDeprtID(int id);
         public Course Getbyid(int id);
         public void Save();
     }
